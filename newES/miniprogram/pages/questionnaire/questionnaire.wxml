@@ -1,0 +1,49 @@
+<view class="container">
+<view class='tea' wx:if="{{usertea}}">
+
+  发布问卷：
+  <text>\n</text>
+  <form class='form' bindsubmit='new_questionnaire'>
+    时间:<input class='input' name='time'></input>
+    问题:
+    <checkbox-group class='question' bindchange="checkboxchange">
+      <label class='checkbox' wx:for="{{queslist}}">
+        <checkbox value="{{item._id}}" checked="{{item.checked}}" data-question="{{item.question}}"></checkbox>
+        {{item.question}}
+      </label>
+    </checkbox-group>
+    <button form-type='submit'>发布</button>
+  </form>
+
+</view>
+
+<view class='stu' wx:if="{{userstu}}">
+
+<form bindsubmit='submit'>
+  <view wx:for="{{queslist}}">
+  <view>{{item.question}}</view>
+  <view class='answer'>
+    <view wx:if="{{item.ifcs}}">
+      <radio-group name="{{item.question}}">
+        <label><radio value='{{item.A}}'>{{item.A}}</radio></label>
+        <label><radio value='{{item.B}}'>{{item.B}}</radio></label>
+        <label><radio value='{{item.C}}'>{{item.C}}</radio></label>
+        <label><radio value='{{item.D}}'>{{item.D}}</radio></label>
+      </radio-group>
+    </view>
+    <view wx:if="{{item.iftf}}">
+      <radio-group name="{{item.question}}">
+        <label><radio value='正确'>正确</radio></label>
+        <label><radio value='错误'>错误</radio></label>
+      </radio-group>
+    </view>
+    <view wx:if="item.ifsa">
+      <input name="{{item.question}}"></input>
+    </view>
+  </view>
+  </view>
+  <button class="button" form-type='submit'>提交</button>
+</form>
+
+</view>
+</view>

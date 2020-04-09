@@ -1,0 +1,7 @@
+<view class="container">
+<text>{{userid}}{{username}}，当前您的课程：</text>
+
+<view class="course" wx:for="{{courselist2}}">
+  <button class="button" id="{{item.courseid}}" bindtap="coursechoose">{{item.courseid}}</button>
+</view>
+</view>

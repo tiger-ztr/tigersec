@@ -1,0 +1,25 @@
+<view class="container">
+
+  <text class="courseid" >{{courseid}}</text>
+  <text>\n</text>
+
+  <view class="list">
+    <text>\n</text>
+    <view class="card" wx:for="{{contentlist}}">
+      <text>时间：{{item.time}}</text>
+      <text>\n</text>
+      <text>内容：{{item.content}}</text>
+    </view>
+  </view>
+
+  <view>
+    <form class="form" bindsubmit="new_cont" wx:if="{{iftea}}">
+      时间<input name='time'></input>
+      <text>\n</text>
+      内容<input name='content'></input>
+     <text>\n</text>
+     <button form-type='submit'>发布</button>
+    </form>
+  </view>
+
+</view>

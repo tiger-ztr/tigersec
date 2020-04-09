@@ -1,0 +1,5 @@
+<view class="container">
+  <image src="{{avatarUrl}}"></image>
+  <text>"{{userInfo.nickName}}"</text>
+  <view class="welcome" wx:if="{{userInfo}}">欢迎登录ES系统</view>
+</view>

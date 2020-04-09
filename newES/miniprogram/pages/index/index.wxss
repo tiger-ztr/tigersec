@@ -1,0 +1,22 @@
+.container{
+  background-color: rgb(233, 227, 227);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+image{
+  margin: 200rpx 200rpx 50rpx 200rpx;
+  height: 300rpx;
+  width: 300rpx;
+  border-radius: 50%;
+}
+
+text{
+  font-size: 50rpx;
+}
+.welcome{
+  margin: 100rpx;
+  font-size: 50rpx;
+}

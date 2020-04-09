@@ -1,0 +1,9 @@
+
+<view class="container">
+<text>资料列表：</text>
+<view wx:for="{{datalist}}">
+  <button class="button" id="{{item._id}}" bindtap="todetail">
+    {{item.dataname}}
+  </button>
+</view>
+</view>

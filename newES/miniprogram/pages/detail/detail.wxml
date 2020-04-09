@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="showcard">
+    <text class="name">{{coursename}}</text>
+    <text class="tea">{{teacher}}</text>
+    <text class="place">{{place}}</text>
+    <text class="time">{{time}}</text>
+    <text class="examtime">考试时间：{{examtime}}</text>
+  </view>
+  <view class="buttons">
+    <button class="button" bindtap="todatalist">资料下载</button>
+    <button class="button" bindtap="tosignin">考勤</button>
+    <button class="button" bindtap="tocontent">授课内容</button>
+    <button class="button" bindtap="toquestionnaire">课程反馈</button>
+  </view>
+</view>

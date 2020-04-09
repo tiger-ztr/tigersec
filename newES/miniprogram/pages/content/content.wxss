@@ -1,0 +1,25 @@
+.container{
+  padding: 10rpx 20rpx;
+  background-color: rgb(233, 227, 227);
+  height: 100vh;
+}
+
+.courseid{
+  font-size: 64rpx;
+}
+
+.list{
+  
+}
+
+.card{
+  border: 1rpx solid;
+  border-radius: 15rpx;
+  padding: 20rpx 40rpx 40rpx;
+  margin: 20rpx 0rpx 20rpx;
+  background-color: rgb(205, 235, 180);
+}
+
+.form{
+
+}

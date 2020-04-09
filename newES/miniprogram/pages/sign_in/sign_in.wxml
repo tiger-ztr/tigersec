@@ -1,0 +1,52 @@
+<view class="container">
+<view class='tea' wx:if="{{usertea}}">
+
+  <view class='new'>
+    <form bindsubmit='new_record'>
+      上课时间：<input name='time' class='input'></input>
+      <text>\n</text>
+      签到码：<input name='sign_code' class='input'></input>
+      <text>\n</text>
+      <button form-type='submit'>创建</button>
+    </form>
+  </view>
+  
+  <text>\n</text>
+
+  <view class='list'>
+    <view class='item' wx:for="{{signlist}}">
+      <view class='item_time'>{{item.time}}  签到码为{{item.sign_code}}</view>
+      <view class='button'>
+        <button wx:if="{{item.state}}" id="{{item._id}}" bindtap='stateoff'>关闭</button>
+        <button wx:if="{{!item.state}}" id="{{item._id}}" bindtap='stateon'>开启</button>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+
+<view class='stu' wx:if="{{userstu}}">
+
+  <view class='list' wx:for="{{signlist}}">
+  <text>\n</text>
+<i-card title="{{courseid}}" extra="{{item.time}}">
+    <view slot="content">
+      <form bindsubmit='sign'>
+        <text>{{item.time}}</text>
+        <text>\n</text>
+        <text>\n</text>
+        <input class='input' name='row' placeholder='在此输入座位行'></input>
+        <text>\n</text>
+        <input class='input' name='column' placeholder='在此输入座位列'></input>
+        <text>\n</text>
+        <input class='input' name='code' placeholder='在此输入签到口令'></input>
+        <text>\n</text>
+        <button form-type='submit' class="button">签到</button>
+      </form>
+    </view>
+</i-card>
+  </view>
+
+</view>
+</view>

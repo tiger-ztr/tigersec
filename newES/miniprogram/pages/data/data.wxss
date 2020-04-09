@@ -1,0 +1,14 @@
+.container{
+  padding: 40rpx 20rpx;
+  background-color: rgb(233, 227, 227);
+  height: 100vh;
+}
+
+text{
+  font-size: 40rpx;
+}
+
+.button{
+  margin: 20rpx;
+  background-color: rgb(205, 235, 180);
+}

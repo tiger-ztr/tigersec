@@ -1,0 +1,43 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(233, 227, 227);
+  height: 100vh;
+}
+
+.showcard{
+  display: flex;
+  flex-direction: column;
+  margin: 50rpx 20rpx 0rpx;
+  border: 1rpx solid silver;
+  padding: 50rpx;
+  background-color: rgb(205, 235, 180)
+}
+
+.name{
+  font-size: 60rpx;
+}
+
+.tea{
+  float: right;
+}
+.place{
+
+}
+
+.time{
+
+}
+
+.examtime{
+
+}
+
+.buttons{
+  margin-top: 50rpx;
+}
+
+.button{
+  margin: 20rpx;
+  background-color: rgb(205, 235, 180)
+}

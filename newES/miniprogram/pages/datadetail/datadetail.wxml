@@ -1,0 +1,14 @@
+<view>
+
+  <text>{{file.dataname}}</text>
+  <image src="{{tempurl}}"></image>
+  <text>{{file.dataintro}}</text>
+
+</view>
+
+<view>
+
+  <button bindtap="downfile">下载</button>
+  <button wx:if="usertea" bindtap="deletefile">删除</button>
+
+</view>

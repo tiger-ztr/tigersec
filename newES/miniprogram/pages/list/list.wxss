@@ -1,0 +1,19 @@
+.container{
+  margin-top: 20rpx;
+  background-color: rgb(233, 227, 227);
+  height: 100vh;
+  padding-top: 40rpx
+}
+
+.course{
+
+}
+
+.button{
+  margin: 30rpx;
+  background-color: rgb(205, 235, 180)
+}
+
+text{
+  font-size: 40rpx
+}

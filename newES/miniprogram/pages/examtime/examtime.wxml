@@ -1,0 +1,5 @@
+<form bindsubmit='release'>
+  <text>\n</text>
+  <input placeholder='输入时间' name="time"></input>
+  <button form-type='submit'>发布</button>
+</form>
